@@ -29,25 +29,21 @@ html {
     margin: 10px auto 0;
     border-radius: 2px;
 }
-.navbar {
+.navbar-nav {
     display: flex;
-    /* flex-direction: column; */
-    background-color: #1d060a; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    width: 100%; 
-    
+    justify-content: flex-start; /* תפריט משמאל לימין */
+    align-items: center;
+    flex-wrap: wrap; /* כדי שלא יישברו אלמנטים החוצה במסכים קטנים */
+    background-color: black;
 }
-.navbar-nav
-{
-    display: flex;
-}
-.navbar-brand
-{
+
+.navbar-brand {
     display: flex;
     color: #1d060a;
+    background-color: black;
 }
-.nav-item marker
-{
+
+.nav-item marker {
     color: #fff;
 }
 
@@ -59,10 +55,9 @@ html {
     display: inline-block;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-right: 40px;
-    
 }
-.nav-link a
-{
+
+.nav-link a {
     display: flex;
     margin: 40px;
 }
@@ -70,7 +65,25 @@ html {
 .navbar a:hover {
     background-color: #555; 
     border-radius: 10px;
-    color: white 
+    color: white;
+}
+
+/* === רספונסיביות למסכים קטנים === */
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: center; /* מסדר את הפריטים יפה במרכז במסכים קטנים */
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 20px; /* מקטין את הטקסט */
+        margin: 10px;
+        padding: 8px;
+    }
+
+    .nav-link a {
+        margin: 10px;
+    }
 }
 section#section1 {
     font-family: 'Playfair Display', serif;
