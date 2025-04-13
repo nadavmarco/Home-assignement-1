@@ -2,15 +2,16 @@ body {
     padding-top: 40px; 
     background-image: url(IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg);
     background-size: cover;
-    object-fit: contain;
     background-position: center; 
     background-attachment: fixed;
-  }
+    object-fit: contain;
+}
+
 html {
     scroll-behavior: smooth;
-  }
-.h2
-{
+}
+
+.h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     text-align: center;
     font-size: 36px;
@@ -19,8 +20,8 @@ html {
     font-family: 'Segoe UI', sans-serif;
     position: relative;
 }
-.h2::after
-{
+
+.h2::after {
     content: "";
     display: block;
     width: 60px;
@@ -29,11 +30,22 @@ html {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
+
+.navbar {
+    background-color: black !important;
+    direction: ltr;
+}
+
+.navbar-collapse {
+    background-color: black;
+}
+
 .navbar-nav {
     display: flex;
-    justify-content: flex-start; /* תפריט משמאל לימין */
+    justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap; /* כדי שלא יישברו אלמנטים החוצה במסכים קטנים */
+    flex-wrap: wrap;
     background-color: black;
 }
 
@@ -43,10 +55,6 @@ html {
     background-color: black;
 }
 
-.nav-item marker {
-    color: #fff;
-}
-
 .navbar a {
     text-decoration: none;
     font-size: 30px;
@@ -54,12 +62,7 @@ html {
     padding: 10px;
     display: inline-block;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-right: 40px;
-}
-
-.nav-link a {
-    display: flex;
-    margin: 40px;
+    margin-left: 40px;
 }
 
 .navbar a:hover {
@@ -68,26 +71,23 @@ html {
     color: white;
 }
 
-/* === רספונסיביות למסכים קטנים === */
+
 @media (max-width: 768px) {
     .navbar-nav {
-        justify-content: center; /* מסדר את הפריטים יפה במרכז במסכים קטנים */
-        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navbar a {
-        font-size: 20px; /* מקטין את הטקסט */
+        font-size: 20px;
         margin: 10px;
         padding: 8px;
     }
-
-    .nav-link a {
-        margin: 10px;
-    }
 }
+
+
 section#section1 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1vw; /* גודל טקסט שמתאים את עצמו */
+    font-size: 1.1vw;
     background-color: #d92a4a;
     background-size: cover;
     background-position: center;
@@ -99,26 +99,30 @@ section#section1 {
     padding: 20px;
     flex-wrap: wrap;
 }
-section#section1 p
-{
-    margin: 0%;
+
+section#section1 p {
+    margin: 0;
     padding: 8px 0;
-  word-wrap: break-word;
+    word-wrap: break-word;
 }
+
 section#section1 div {
     flex: 1;
     min-width: 250px;
     color: rgb(0, 0, 0);
-  }
-img
-{
+}
+
+
+img {
     padding: 10px;
     border-radius: 25px;
-    width: 300px; 
+    width: 300px;
     height: 200px;
     object-fit: cover;
     flex-shrink: 0;
+    display: block;
 }
+
 .cards-container img {
     width: 320px;
     height: 200px;
@@ -126,6 +130,8 @@ img
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 .cards-container {
     font-family: 'Lobster', cursive;
     font-size: 22px;
@@ -143,20 +149,24 @@ img
 .cards:hover {
     transform: scale(1.02);
 }
+
 .card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     display: block;
 }
-.footer{
-    background-image: url(IMGS/City-of-Seoul_CJNattanai_Getty-Images-1.jpg); 
-    background-size: cover; 
-    background-position: center; 
+
+
+.footer {
+    background-image: url(IMGS/City-of-Seoul_CJNattanai_Getty-Images-1.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    color: white; 
+    color: white;
     text-align: center;
 }
+
 .footer a {
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -166,42 +176,39 @@ img
     margin: 10px auto;
     padding: 10px 20px;
     background-color: #d92a4a;
-    color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 200px;
     transition: all 0.3s ease;
     font-family: 'Segoe UI', sans-serif;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .footer a:hover {
     background-color: #555;
     color: thistle;
     transform: scale(1.05);
 }
+
 section {
     padding: 10px;
     border-radius: 10px;
 }
-section#gallery
-{
-    h2{
-        color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        
-    }
-    p
-    {
-        color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-}
-section#links
-{
-    h2
-    {
-        color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
+
+section#gallery h2,
+section#gallery p,
+section#links h2 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 600px) {
+    section#section1 {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
