@@ -6,11 +6,18 @@ body {
     background-attachment: fixed;
     object-fit: contain;
 }
+body {
+    padding-top: 40px;
+    background-image: url(IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 html {
     scroll-behavior: smooth;
 }
-
 .h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -99,17 +106,27 @@ section#section1 {
     padding: 20px;
     flex-wrap: wrap;
 }
+section#famous {
+   margin-top: 70px;
+}
 
 section#section1 p {
     margin: 0;
     padding: 8px 0;
     word-wrap: break-word;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 section#section1 div {
     flex: 1;
     min-width: 250px;
     color: rgb(0, 0, 0);
+}
+section h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 
