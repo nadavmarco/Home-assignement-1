@@ -6,15 +6,6 @@ body {
     background-attachment: fixed;
     object-fit: contain;
 }
-body {
-    padding-top: 40px;
-    background-image: url(IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 html {
     scroll-behavior: smooth;
 }
