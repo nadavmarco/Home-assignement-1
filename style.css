@@ -90,11 +90,7 @@ html {
         padding: 8px;
     }
 }
-
-
 section#section1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1vw;
     background-color: #d92a4a;
     background-size: cover;
     background-position: center;
@@ -111,10 +107,16 @@ section#famous {
 }
 
 section#section1 p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     margin: 0;
     padding: 8px 0;
     word-wrap: break-word;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
 }
 
 section#section1 div {
@@ -127,9 +129,8 @@ section h2 {
     font-size: 36px;
     margin-bottom: 20px;
     position: relative;
+    font-family: 'Playfair Display', serif;
 }
-
-
 img {
     padding: 10px;
     border-radius: 25px;
