@@ -1,6 +1,6 @@
 body {
     padding-top: 40px; 
-    background-image: url(/IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg);
+    background-image: url(IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg);
     background-size: cover;
     object-fit: contain;
     background-position: center; 
@@ -115,7 +115,7 @@ img
     display: block;
 }
 .footer{
-    background-image: url(/IMGS/City-of-Seoul_CJNattanai_Getty-Images-1.jpg); 
+    background-image: url(IMGS/City-of-Seoul_CJNattanai_Getty-Images-1.jpg); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
