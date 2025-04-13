@@ -31,9 +31,24 @@ html {
 }
 .navbar {
     display: flex;
+    /* flex-direction: column; */
     background-color: #1d060a; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 100%; 
+    
+}
+.navbar-nav
+{
+    display: flex;
+}
+.navbar-brand
+{
+    display: flex;
+    color: #1d060a;
+}
+.nav-item marker
+{
+    color: #fff;
 }
 
 .navbar a {
@@ -43,6 +58,13 @@ html {
     padding: 10px;
     display: inline-block;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-right: 40px;
+    
+}
+.nav-link a
+{
+    display: flex;
+    margin: 40px;
 }
 
 .navbar a:hover {
