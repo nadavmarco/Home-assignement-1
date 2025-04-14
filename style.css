@@ -1,12 +1,16 @@
 body {
     padding-top: 40px; 
-    /* background-image: url(IMGS/Namsan-Tower-during-autumn-in-Seoul-South-Korea.jpg); */
     background-image: url(IMGS/seoul-background.png);
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
     object-fit: contain;
 }
+/* @media (max-width: 768px) {
+    body {
+        background-image: url(IMGS/seoul-background.png);
+    }
+} */
 html {
     scroll-behavior: smooth;
 }
